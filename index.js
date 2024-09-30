@@ -5,7 +5,7 @@ const { EMA, RSI, BollingerBands, Stochastic } = require('technicalindicators');
 const app = express();
 const port = 3000;
 
-const FINAZON_API_URL = 'https://api.finazon.io/latest/finazon/forex/time_series?ticker=EUR/USD&interval=1m&page=0&page_size=1000&apikey=18535cbd97e2400d93f96802097d83c9af';
+const FINAZON_API_URL = 'https://api.finazon.io/latest/finazon/forex/time_series?ticker=EUR/USD&interval=1m&page=0&page_size=200&apikey=18535cbd97e2400d93f96802097d83c9af';
 
 // Function to fetch data from Finazon API
 const getForexData = async () => {
